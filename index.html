@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LyricSeeker</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .card {
+            cursor: pointer;
+        }
+    </style>   
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/logo.jpg" alt="Lyrical.com Logo">
+            <b><span>LYRICS SEEKER</span></b>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="profile.php">Profile</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1 style="color: black;">The world's biggest and best lyrics catalog, and more!</h1>
+        <p style="color: blacks;">Enriching music experiences worldwide, enabling you to witness the music come alive.</p>
+    </section>
+
+    <section class="content">
+        <h2>Empowered by the LyricsSeeker Community</h2>
+        <div class="cards">
+            <div class="card" onclick="redirectToAlbum('./lyrics/sajni.html')">
+                <img src="./images/sajni.jpg" alt="Sajni">
+                <div class="card-content">
+                    <h3>Sajni</h3>
+                    <p>Arijit Singh</p>
+                </div>
+            </div>
+            <div class="card" onclick="redirectToAlbum('./lyrics/birds-of-a-feather.html')">
+                <img src="./images/birds_of_a_feather.jpg" alt="Birds of a Feather">
+                <div class="card-content">
+                    <h3>Birds of a Feather</h3>
+                    <p>Billie Eilish</p>
+                </div>
+            </div>
+            <div class="card" onclick="redirectToAlbum('./lyrics/anuvanuvu.html')">
+                <img src="./images/anuvanuvu.jpg" alt="Anuvanuvuu">
+                <div class="card-content">
+                    <h3>Anuvanuvuu</h3>
+                    <p>Arijit Singh</p>
+                </div>
+            </div>
+            <div class="card" onclick="redirectToAlbum('./lyrics/megham-karukatha.html')">
+                <img src="./images/megham-karukatha.jpg" alt="Megham Karukatha">
+                <div class="card-content">
+                    <h3>Megham Karukatha</h3>
+                    <p>Anirudh Ravichander</p>
+                </div>
+            </div>
+            <div class="card" onclick="redirectToAlbum('./lyrics/yeh-ishq-hai.html')">
+                <img src="./images/yeh-ishq-hai.jpg" alt="Yeh Ishq Hai">
+                <div class="card-content">
+                    <h3>Yeh Ishq Hei</h3>
+                    <p>Pritam</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trending">
+        <h2>Trending Now</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Illuminati (Aavesham)</h3>
+                <img src="./images/iluminali.jpg" alt="Sushin Shyam">
+                <p>Sushin Shyam</p>
+                <p>Naadin Nanmakane</p>
+                <p>Ponmakane Muthaayavane</p>
+                <p>Minnum Sooriyanum Chanthiranum Onnaayavane</p>    
+                <p>Kaalam Kaathuvecha Rakshakane Samhaarakane</p>  
+                <p>Njangalkkannanaayi</p>                    
+                <p>Vannavane ….</p>
+            </div>
+            <div class="card">
+                <h3>Nadaaniyaan</h3>
+                <img src="./images/nadaaniyan.jpg" alt="Akshath Acharya">
+                <p>Akshath Acharya</p>
+                <p>Kaise Tu
+                   Gungunaye Muskuraye
+                   Chhoti Moti Baaton Pe
+                   Munh Phulaye</p>
+                <p>Yeh Nazakat Meri Aadat
+                   Paas Mujhe Laye</p>   
+                <p>Nadaaniyaan Nadaniyan
+                   Kheenche Mujhe Nadaaniyan
+                   Naadaniyan Nadaaniyaan
+                   Pagal Kare Teri Har Ada</p>
+            </div>
+            <div class="card">
+                <h3>Butter</h3>
+                <img src="./images/butter.jpg" alt="BTS">
+                <p>BTS</p>
+                 <p>Smooth like butter
+                   Like a criminal undercover</p>
+                 <p>Gon' pop like trouble
+                   Breakin' into your heart like that (Ooh)</p>    
+                 <p>Cool shade stunner
+                   Yeah, I owe it all to my mother</p>    
+                 <p>Hot like summer
+                   Yeah, I'm makin' you sweat like that
+                   Break it down</p>
+            </div>
+            <div class="card">
+                <h3>Sooseki</h3>
+                <img src="./images/sooseki.jpg" alt="Sooskeki">
+                <p>Shreya Ghoshal</p>
+                 <p>Sooseki aggiravva madhiri</p>
+                 <p>vuntade naa saami</p>
+                 <p>methaani paththi poovvulamari</p>
+                 <p>santode naa saami</p>
+        </div>
+    </section>
+    <section class="artists">
+        <h2>Most Streamed Artists</h2>
+        <div class="artist-cards">
+            <div class="artist-card" onclick="redirectToAlbum('./artists/taylor-swift.html')">
+                <img src="./images/taylor.jpg" alt="Taylor Swift">
+                <p>Taylor Swift</p>
+            </div>
+            <div class="artist-card" onclick="redirectToAlbum('./artists/billie-eilish.html')">
+                <img src="./images/billiesh.jpg" alt="Billie Eilish">
+                <p>Billie Eilish</p>
+            </div>
+            <div class="artist-card" onclick="redirectToAlbum('./artists/ariana-grande.html')">
+                <img src="./images/grande.jpg" alt="Ariana Grande">
+                <p>Ariana Grande</p>
+            </div>
+            <div class="artist-card" onclick="redirectToAlbum('./artists/imagine-dragons.html')">
+                <img src="./images/dragon.jpg" alt="Imagine Dragons">
+                <p>Imagine Dragons</p>
+            </div>
+            <div class="artist-card" onclick="redirectToAlbum('./artists/the-weeknd.html')">
+                <img src="./images/weeknd.jpg" alt="The Weeknd">
+                <p>The Weeknd</p>
+            </div>
+            <div class="artist-card" onclick="redirectToAlbum('./artists/beyonce.html')">
+                <img src="./images/beyonce.jpg" alt="Beyonce">
+                <p>Beyonce</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="podcasts">
+        <h2>Top Artists on Podcasts</h2>
+        <div class="podcast-cards">
+            <div class="podcast-card" onclick="redirectToAlbum('./artists/taylor-swift.html')">
+                <p>I am proud of your love. Creating...</p>
+                <img src="./images/taylor.jpg" alt="Taylor Swift">
+                <p>Taylor Swift</p>
+            </div>
+            <div class="podcast-card" onclick="redirectToAlbum('./artists/billie-eilish.html')">
+                <p>I feel different today, than I felt...</p>
+                <img src="./images/billiesh.jpg" alt="Billie Eilish">
+                <p>Billie Eilish</p>
+            </div>
+            <div class="podcast-card" onclick="redirectToAlbum('./artists/ariana-grande.html')">
+                <p>I have changed. I have changed...</p>
+                <img src="./images/grande.jpg" alt="Ariana Grande">
+                <p>Ariana Grande</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="lyrics">
+        <h2>Lyrics that live forever</h2>
+        <div class="lyrics-cards">
+            <div class="lyrics-card" onclick="redirectToAlbum('./lyrics/so-far-away.html')">
+                <p>And now that we're here, it's...</p>
+                <p>SO FAR AWAY</p>
+            </div>
+            <div class="lyrics-card" onclick="redirectToAlbum('./lyrics/try-again.html')">
+                <p>But I was made the way I am, I'm...</p>
+                <p>TRY AGAIN</p>
+            </div>
+            <div class="lyrics-card" onclick="redirectToAlbum('./lyrics/forever-falls-apart.html')">
+                <p>We've been living on a fault line and...</p>
+                <p>FOREVER FALLS APART</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        &copy; 2024 LyricsSeeker. All rights reserved.
+    </footer>
+    <script>
+        function redirectToAlbum(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>

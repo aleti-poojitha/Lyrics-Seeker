@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background: url(./images/login.png) no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        header {
+            width: 100%;
+            background-color: #f8f8f8;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        header .logo {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+        header .logo img {
+            height: 40px;
+            margin-right: 0.5rem;
+        }
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin-right: 66px;
+            padding: 0;
+            justify-content: space-between;
+        }
+        header nav ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+        header nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 19px;
+        }
+        main {
+            text-align: center;
+            margin-top: 80px;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.142);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+        }
+        form label {
+            text-align: left;
+            margin-bottom: 10px;
+            font-weight: bold;
+            display: block;
+        }
+        form input[type="text"], 
+        form input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        form button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        form button[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+        p {
+            margin-top: 10px;
+            text-align: center;
+        }
+        p a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        p a:hover {
+            text-decoration: underline;
+        }
+        
+    </style>
+</head>
+<body>
+  <header>
+      <div class="logo">
+          <img src="./images/logo.jpg" alt="Lyrical.com Logo">
+          <b><span>LYRICS SEEKER</span></b>
+      </div>
+      <nav>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Search</a></li>
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Logout</a></li>
+          </ul>
+      </nav>
+  </header>
+  <main>
+    <div class="container">
+        <h1>Login</h1>
+        <form id="login-form" action="login_process.php" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required><br/>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <div id="error-message" style="color: red; margin-top: 10px;"></div><br/>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="register.html">Register</a></p>   
+    </div>
+  </main>
+  <script>
+    let urlParams = new URLSearchParams(window.location.search);
+    let errorMessage = urlParams.get('error');
+    if (errorMessage) {
+        document.getElementById('error-message').innerText = errorMessage;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  header .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+  
+  header .logo img {
+    height: 40px;
+    margin-right: 0.5rem;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+    padding: 0;
+    justify-content: space-between;
+  }
+  
+  header nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+  }
+  
+  .hero {
+    text-align: left;
+    padding: 9rem 6rem;
+    background: url('./images/img.jpg') no-repeat center center fixed ;
+    background-size: cover;
+    background-size: cover;
+    height: 30%;
+    
+  }
+  
+  .content, .trending, .artists, .podcasts, .lyrics {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .cards, .artist-cards, .podcast-cards, .lyrics-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .card, .artist-card, .podcast-card, .lyrics-card {
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-width: 150px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card img, .artist-card img, .podcast-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .card:hover, .artist-card:hover, .podcast-card:hover, .lyrics-card:hover {
+    transform: translateY(-15px) scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-section {
+    background-color: #f00;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .hero-section a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  .icons-container img {
+    margin: 0 0.5rem;
+    width: 40px;
+    height: 40px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #fffdd2;
+    border-top: 1px solid #ddd;
+  }
+
+  a {
+    text-decoration: none;
+    color: #4caf50;
+  }
+  
+  a:hover {
+    color: #3e8e41;
+  }
+
+  button {
+    background-color: #3e8e41;
+  }
+  
+  p {
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  .container {
+    width: 300px;
+    margin: 40px auto;
+    padding: 20px;
+    margin-left: 5%;
+    margin-top: 11%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
